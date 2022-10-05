@@ -611,8 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4abe02e910f57f44bd126d0269ec181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 3460058285786466042, guid: d860a8a913726284bb55577889f0d1fb, type: 3}
-  DelaySpawn: 2
+  _template: {fileID: 1429573706107535080, guid: d860a8a913726284bb55577889f0d1fb, type: 3}
   Count: 6
   _spawnPoint: []
 --- !u!1001 &641966635

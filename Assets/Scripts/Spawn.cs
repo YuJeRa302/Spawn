@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    public GameObject Enemy;
-    public int DelaySpawn = 2;
-    public int Count;
+    [SerializeField] private Enemy _template;
+    [SerializeField] private int Count;
+    private int DelaySpawn = 2;
 
     [SerializeField] private Transform[] _spawnPoint;
 
@@ -53,6 +53,6 @@ public class Spawn : MonoBehaviour
 
     private void CreateEnemy(int index, int indent)
     {
-        Instantiate(Enemy, new Vector3(_spawnPoint[index].localPosition.x, _spawnPoint[index].localPosition.y, _spawnPoint[index].localPosition.z + indent), new Quaternion(0, 180, 0, 0));
+        Instantiate(_template, new Vector3(_spawnPoint[index].localPosition.x, _spawnPoint[index].localPosition.y, _spawnPoint[index].localPosition.z + indent), new Quaternion(0, 180, 0, 0));
     }
 }
