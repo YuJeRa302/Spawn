@@ -5,10 +5,9 @@ public class Spawn : MonoBehaviour
 {
     [SerializeField] private Enemy _template;
     [SerializeField] private int Count;
-    private int DelaySpawn = 2;
-
     [SerializeField] private Transform[] _spawnPoint;
 
+    private int DelaySpawn = 2;
     private IEnumerator _spawnEnemy;
 
     private void Start()
